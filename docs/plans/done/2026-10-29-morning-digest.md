@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+closed: 2026-11-08
 ---
 
 # Morning digest
@@ -77,3 +78,20 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issues
+
+| # | Issue | Blocked by | Worker | Closed |
+|---|-------|-----------|--------|--------|
+| 1 | Run log reader and digest types | — | claude-code · sonnet-5.5 · default | 2026-11-08 |
+| 2 | Digest page | #1 | claude-code · haiku-5.5 · default | 2026-11-08 |
+| 3 | Digest JSON | #1 | claude-code · haiku-5.5 · default | 2026-11-08 |
+| 4 | Board link | #1, #2 | claude-code · haiku-5.5 · default | 2026-11-08 |
+| 5 | Route tests | #1, #2, #3 | claude-code · sonnet-5.5 · default | 2026-11-08 |
+| 6 | Save the page as one HTML file | #2 | claude-code · haiku-5.5 · default | 2026-11-08 |
+| 7 | Upload the preview and send it to the reviewer | #6 | human-approved · claude-code · sonnet-5.5 | 2026-11-08 |
+| 8 | Take the lane marker off the preview | #7 | human-approved · claude-code · sonnet-5.5 | 2026-11-08 |
+| 9 | Close the plan | #8 | claude-code · sonnet-5.5 · default | 2026-11-08 |
+
+Issues: https://github.com/makro2400/megadev-s01e04/issues (label `plan:morning-digest`).
+The preview marker was taken off the same link once the review was in. See ADR 0003.
